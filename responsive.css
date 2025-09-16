@@ -1,0 +1,25 @@
+/* Responsive override */
+@media (max-width: 768px) {
+
+    /* navbar logo size  */
+   .main-logo-size img{
+    width: 45px;
+    height: auto;
+    }
+
+    /* Why choose us section responsive css start  */
+    .ch-bg-photo,
+    .ch-bg-color {
+        min-height: 1300px;
+        
+        background-attachment: scroll; /* fix mobile behavior */
+    }
+    /* Why choose us section responsive css end  */
+
+    /* what people say section responsive css start */
+    .customCssForSwiperSlide {
+    width: 85% !important; 
+    }
+    /* what people say section responsive css end */
+}
+
