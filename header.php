@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes();?>>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset')?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happiness Institute</title>
 
@@ -85,111 +85,28 @@
                     <div class="col-12 d-md-flex px-0 py-0">
                         <div class="speacing-betwn d-flex justify-content-between">
                             <a class="navbar-brand main-logo-size" href="index.html">
-                                <img src="<?php echo get_template_directory_uri() . '/images/happiness-logo.jpg' ?>" alt="Happiness_Main_Logo"></a>
-                            <button class="navbar-toggler border-0 box-shadow-delete" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="<?php echo get_template_directory_uri() . '/images/main-logo.png' ?>"
+                                    alt="Happiness_Main_Logo"></a>
+                            <button class="navbar-toggler border-0 box-shadow-delete" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                         </div>
-                        <div class="collapse navbar-collapse collapse-horizontal ps-md-0 ps-3 py-md-0 py-3" id="navbarNavDropdown">
+                        <div class="collapse navbar-collapse collapse-horizontal ps-md-0 ps-3 py-md-0 py-3"
+                            id="navbarNavDropdown">
                             <ul class="navbar-nav nav-ft-size">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        ENGLISH SPEAKING
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="single-page.html">English For Beginners</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="single-page.html">English For Business</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="single-page.html">English For Foreign</a>
-                                        </li>
-                                    </ul>
-                                </li>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        PUBLIC SPEAKING
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="single-page.html">Speaking For Corporates</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="single-page.html">Speaking For Motivational
-                                                Speakers</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="single-page.html">Speaking For Students</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        INTERVIEW
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="single-page.html">Interview For SSB</a></li>
-                                        <li><a class="dropdown-item" href="single-page.html">Interview For MNC</a></li>
-                                        <li><a class="dropdown-item" href="single-page.html">Interview For Jobs</a></li>
-                                        <li><a class="dropdown-item" href="single-page.html">Interview For Cabin
-                                                Crew</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        PERSONALITY DEVELOPMENT
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="single-page.html">Disordered Personality</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="single-page.html">Personal Development &
-                                                Growth</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        STUDY ABROAD
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="single-page.html">IELTS</a></li>
-                                        <li><a class="dropdown-item" href="single-page.html">TOEFL</a></li>
-                                        <li><a class="dropdown-item" href="single-page.html">OET</a></li>
-                                        <li><a class="dropdown-item" href="single-page.html">PTE</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        FOREIGN LANGUAGES
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="single-page.html">French</a></li>
-                                        <li><a class="dropdown-item" href="single-page.html">German</a></li>
-                                        <li><a class="dropdown-item" href="single-page.html">Spanish</a></li>
-                                        <li><a class="dropdown-item" href="single-page.html">Japanese</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        GALLERY
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="image-gallery.html">Image Gallery</a></li>
-                                        <li><a class="dropdown-item" href="video-gallery.html">Video Gallery</a></li>
-
-                                    </ul>
-                                </li>
+                                <?php
+                                    wp_nav_menu(array(
+                                            'theme_location' => 'primary-menu',
+                                            'menu_class'     =>  'navbar-nav',
+                                            'container'      => false,
+                                            'depth'          => 0,
+                                            'fallback_cb'    => 'primary_menu_fallback',
+                                            'walker'         => new WP_Bootstrap_Navwalker(),
+                                        ));
+                                    ?>
 
                             </ul>
                         </div>
