@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html <?php language_attributes();?>>
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="<?php bloginfo('charset')?>">
+    <meta charset="<?php bloginfo('charset') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happiness Institute</title>
 
     <?php wp_head(); ?>
 </head>
 
-<body class="body-phone-float position-relative  ">
+<body class="body-phone-float position-relative">
+
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
+
     <div class="social-logo-float position-absolute bottom-0 end-0">
         <ul class="ps-0">
             <li class="mb-2 me-3">
@@ -98,15 +103,15 @@
                             <ul class="navbar-nav nav-ft-size">
 
                                 <?php
-                                    wp_nav_menu(array(
-                                            'theme_location' => 'primary-menu',
-                                            'menu_class'     =>  'navbar-nav',
-                                            'container'      => false,
-                                            'depth'          => 0,
-                                            'fallback_cb'    => 'primary_menu_fallback',
-                                            'walker'         => new WP_Bootstrap_Navwalker(),
-                                        ));
-                                    ?>
+                                wp_nav_menu(array(
+                                    'theme_location' => 'primary-menu',
+                                    'menu_class'     =>  'navbar-nav',
+                                    'container'      => false,
+                                    'depth'          => 0,
+                                    'fallback_cb'    => 'primary_menu_fallback',
+                                    'walker'         => new WP_Bootstrap_Navwalker(),
+                                ));
+                                ?>
 
                             </ul>
                         </div>

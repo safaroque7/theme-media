@@ -16,24 +16,24 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 */
 
 .brand-color {
-  background-color: #ae3941;
+  background-color: #175643;
   color: white;
 }
 
 .bg-color {
-  background-color: #ae3941;
+  background-color: #175643;
 }
 
 .icon-color {
-  color: #ae3941;
+  color: #175643;
 }
 
 /* Navbar css start  */
 .nav-link:hover {
-  color: #ae3941 !important;
+  color: #175643 !important;
 }
 .dropdown-item:hover {
-  background-color: #ae3941 !important;
+  background-color: #175643 !important;
   color: white !important;
 }
 
@@ -52,7 +52,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   list-style: none;
 }
 .header-top-bg-color {
-  background-color: #ae3941;
+  background-color: #175643;
 }
 
 /* header top CSS End */
@@ -77,7 +77,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   color: gray;
 }
 .footer-address a:hover {
-  color: #ae3941;
+  color: #175643;
   transition: all 0.3s ease;
 }
 .footer-headings-color {
@@ -92,7 +92,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   color: gray;
 }
 .footer-company ul li a:hover {
-  color: #ae3941;
+  color: #175643;
   transition: all 0.3s ease;
 }
 
@@ -105,7 +105,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   color: gray;
 }
 .footer-courses ul li a:hover {
-  color: #ae3941;
+  color: #175643;
   transition: all 0.3s ease-in-out;
 }
 .footer-getin-touch ul {
@@ -118,7 +118,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   transition: all 0.3s ease-in-out;
 }
 .footer-getin-touch ul li a:hover {
-  color: #ae3941;
+  color: #175643;
 }
 /* Footer CSS End  */
 
@@ -126,13 +126,13 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 
 /*** our courses section css start  ***/
 .our-courses-view-btn-hover a {
-  border: 2px solid #ae3941;
+  border: 2px solid #175643;
   transition: all 0.3s ease;
 }
 
 .our-courses-view-btn-hover a:hover {
-  border: 2px solid #ae3941;
-  color: #ae3941;
+  border: 2px solid #175643;
+  color: #175643;
 }
 
 /*** our courses section css end  ***/
@@ -140,12 +140,12 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 /*** English Speaking section css start  ***/
 
 .card-title:hover {
-  color: #ae3941;
+  color: #175643;
   transition: all 0.3s ease-in-out;
 }
 .next-btn-hover button:hover {
-  border-color: #ae3941;
-  color: #ae3941;
+  border-color: #175643;
+  color: #175643;
 }
 
 /*** English Speaking section css end  ***/
@@ -168,11 +168,11 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 }
 
 .why-join-hover a {
-  border: 2px solid #ae3941 !important;
+  border: 2px solid #175643 !important;
   transition: all 0.3s ease !important;
 }
 .why-join-hover a:hover {
-  border: 2px solid #ae3941 !important;
+  border: 2px solid #175643 !important;
   color: white !important;
 }
 
@@ -205,7 +205,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 
 .q-links:hover a {
   color: white !important;
-  background-color: #ae3941 !important;
+  background-color: #175643 !important;
   transition: all 0.3 ease-out !important;
 }
 .sticky-overview {
@@ -262,8 +262,8 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   transition: all 0.3s ease;
 }
 .social-logo ul li a:hover {
-  background-color: #ae3941;
-  border: 1px solid #ae3941;
+  background-color: #175643;
+  border: 1px solid #175643;
 }
 
 /* contact us CSS end */

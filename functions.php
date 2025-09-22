@@ -14,3 +14,6 @@ include_once get_template_directory() . '/class-wp-bootstrap-5.3.7-navwalker.php
 
 //fallback-primary-menu
 require_once get_template_directory() . '/includes/fallback-primary-menu.php';
+
+// add-primary-category-field
+include_once get_template_directory() . '/includes/bangla-english-date.php';
