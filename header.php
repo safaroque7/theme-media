@@ -37,7 +37,7 @@
                 <div class="col-md-6 d-md-flex">
                     <div class="Phone-no px-2 d-flex justify-content-center align-items-center">
                         <a href="#" class="text-decoration-none text-white pe-2">
-                            <i class="bi bi-telephone"></i> +01914449393
+                            <i class="bi bi-telephone"></i> +01716346975
                         </a>
                         <div class="vr"></div>
                     </div>
@@ -47,7 +47,7 @@
                     <div class="location d-flex justify-content-center align-items-center">
                         <a href="#" class="text-decoration-none text-white text-center">
                             <i class="bi bi-geo-alt pe-2"></i>
-                            Anarkoli Market, Malibag, Dhaka-1200
+                            260/6, Malibag Biggan College Bhavan, Lift-4, Dhaka-1200
                         </a>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
 
 
     <!-- Navbar Start  -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm px-0 py-md-3 py-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm px-0 py-md-3 py-0 mb-md-5 mb-3">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">

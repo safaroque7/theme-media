@@ -4,8 +4,8 @@
         <div class="row py-5">
             <div class="col-md-4">
                 <div class="row">
-                    <div class="col-12 haniness-logo mb-3">
-                        <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/logo_footer.jpg' ?>" alt="haniness logo"></a>
+                    <div class="col-md-3 haniness-logo mb-3">
+                        <a href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo get_template_directory_uri() . '/images/main-logo.png' ?>" alt="haniness logo" class="img-fluid"></a>
                     </div>
                     <div class="col-12 d-flex">
                         <a href="#"><img class="img-fluid pe-3" style="width: 150px; height: auto;"
@@ -16,18 +16,17 @@
                     <div class="col-12 footer-address mt-3">
                         <a href="#" class="text-decoration-none">
                             <i class="bi bi-geo-alt"></i>
-                            Anarkoli Market, Malibag, Dhaka-1200
+                            260/6, Malibag Biggan College Bhavan, Lift-4, Dhaka-1200
                         </a>
                         <a href="#" class="text-decoration-none d-block">
-                            <i class="bi bi-phone-vibrate"></i> +01914449393
+                            <i class="bi bi-phone-vibrate"></i> +01716346975
                         </a>
                         <a href="#" class="text-decoration-none d-block">
-                            <i class="bi bi-envelope-at"></i> happiness-ins.com
+                            <i class="bi bi-envelope-at"></i> sitv24.com
                         </a>
                     </div>
                 </div>
             </div>
-
             <div class="col-md-2 footer-company mt-md-0 mt-3">
                 <h5 class="footer-headings-color mb-3">Company</h5>
                 <ul>
@@ -95,8 +94,8 @@
         <div class="row">
             <div class="col-12 py-3 d-flex justify-content-center ">
 
-                <p class="text-secondary mb-0">2025 <code class="text-white">HappinessInstitute</code> All Rights
-                    Reserved.</p>
+                <p class="text-secondary mb-0">2025 <code class="text-white">S I TV</code> All Rights
+                    Reserved. Design and Development By: <a href="https://webnewsdesign.com" target="_blank"> webnewsdesign.com </a></p>
             </div>
 
         </div>

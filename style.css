@@ -15,6 +15,13 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Da 2", sans-serif;
+}
+
 .brand-color {
   background-color: #175643;
   color: white;
@@ -283,4 +290,8 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 }
 .social-logo-float ul li a:hover {
   color: black !important;
+}
+
+#menu-primary-menu li a {
+  font-size: 21px;
 }

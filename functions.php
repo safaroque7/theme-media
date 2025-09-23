@@ -1,6 +1,9 @@
 <?php
 
 //after setup theme
+require_once get_template_directory() . '/includes/default.php';
+
+//after setup theme
 require_once get_template_directory() . '/includes/after-setup-theme.php';
 
 //css and js
