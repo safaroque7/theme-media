@@ -1,6 +1,6 @@
  <!-- item start  -->
-
- <?php
+ <div class="position-relative">
+     <?php
     $thumb_id = get_post_thumbnail_id(get_the_ID());
     $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
     if (has_post_thumbnail()) {
@@ -8,10 +8,24 @@
             'class' => 'img-fluid',
             'alt'   => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
         ));
-    }
+    } else { ?>
+     <img src="<?php echo get_template_directory_uri() . '/images/alter-image-287x185px.jpg' 
+                ?>" class="card-img-top " alt="...">
+     <?php }
+
+     $yotubeVideoLink = get_field('youtube_video_link');
+     $fbVideoLink = get_field('facebook_link');
+
+    if(!empty($yotubeVideoLink) || !empty($fbVideoLink)){ ?>
+     <div class="text-danger fs-2 rounded-circle bg-white position-absolute top-50 start-50 translate-middle media-play d-flex justify-content-center align-items-center">
+        <!-- <i class="bi bi-play-circle-fill"></i> -->
+         <i class="fa-solid fa-circle-play fa-beat-fade" style="color: #ff0505;"></i>
+     </div>
+     <?php }
+
     ?>
- <!-- <img src="<?php //echo get_template_directory_uri() . '/images/our_courses_1.jpg' 
-                ?>" class="card-img-top " alt="..."> -->
+ </div>
+
  <div class="card-body pb-2 text-center">
 
      <a href="<?php the_permalink(); ?>" class="text-decoration-none text-black">
@@ -21,9 +35,9 @@
      <?php the_content(); ?>
 
      <div class="row border-top py-3">
-         <div class="col-6 call-btn border-end view-btn-hover d-flex justify-content-center align-items-center"> পর্ব : <?php echo get_field('episode'); ?> </div>
-         <div
-             class="col-6 d-view-btn view-btn-hover d-flex justify-content-center">
+         <div class="col-6 call-btn border-end view-btn-hover d-flex justify-content-center align-items-center"> পর্ব :
+             <?php echo get_field('episode'); ?> </div>
+         <div class="col-6 d-view-btn view-btn-hover d-flex justify-content-center">
              <a href="<?php the_permalink(); ?>" class="btn rounded-1 brand-color"> বিস্তারিত </a>
          </div>
      </div>

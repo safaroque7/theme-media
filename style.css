@@ -3,7 +3,7 @@ Theme Name: Theme Media
 Theme URI: https://webnewsdesign.com
 Author: S A Faroque
 Author URI: https://webnewsdesign.com
-Description: Theme Media একটি আধুনিক, দ্রুতগতি এবং কাস্টমাইজযোগ্য ওয়ার্ডপ্রেস থিম, যা ব্লগ, পোর্টফোলিও, বিজনেস অথবা ব্যক্তিগত ওয়েবসাইটের জন্য উপযুক্ত। থিমটি SEO-ফ্রেন্ডলি, মোবাইল রেসপন্সিভ এবং সকল আধুনিক ব্রাউজারে সাপোর্ট করে। সহজ কাস্টমাইজেশন অপশন এবং পরিচ্ছন্ন ডিজাইন এর মাধ্যমে আপনি আপনার সাইটকে করে তুলতে পারেন আরও পেশাদার ও আকর্ষণীয়।
+Description: Theme Media à¦à¦•à¦Ÿà¦¿ à¦†à¦§à§à¦¨à¦¿à¦•, à¦¦à§à¦°à§à¦¤à¦—à¦¤à¦¿ à¦à¦¬à¦‚ à¦•à¦¾à¦¸à§à¦Ÿà¦®à¦¾à¦‡à¦œà¦¯à§‹à¦—à§à¦¯ à¦“à§Ÿà¦¾à¦°à§à¦¡à¦ªà§à¦°à§‡à¦¸ à¦¥à¦¿à¦®, à¦¯à¦¾ à¦¬à§à¦²à¦—, à¦ªà§‹à¦°à§à¦Ÿà¦«à§‹à¦²à¦¿à¦“, à¦¬à¦¿à¦œà¦¨à§‡à¦¸ à¦…à¦¥à¦¬à¦¾ à¦¬à§à¦¯à¦•à§à¦¤à¦¿à¦—à¦¤ à¦“à§Ÿà§‡à¦¬à¦¸à¦¾à¦‡à¦Ÿà§‡à¦° à¦œà¦¨à§à¦¯ à¦‰à¦ªà¦¯à§à¦•à§à¦¤à¥¤ à¦¥à¦¿à¦®à¦Ÿà¦¿ SEO-à¦«à§à¦°à§‡à¦¨à§à¦¡à¦²à¦¿, à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦°à§‡à¦¸à¦ªà¦¨à§à¦¸à¦¿à¦­ à¦à¦¬à¦‚ à¦¸à¦•à¦² à¦†à¦§à§à¦¨à¦¿à¦• à¦¬à§à¦°à¦¾à¦‰à¦œà¦¾à¦°à§‡ à¦¸à¦¾à¦ªà§‹à¦°à§à¦Ÿ à¦•à¦°à§‡à¥¤ à¦¸à¦¹à¦œ à¦•à¦¾à¦¸à§à¦Ÿà¦®à¦¾à¦‡à¦œà§‡à¦¶à¦¨ à¦…à¦ªà¦¶à¦¨ à¦à¦¬à¦‚ à¦ªà¦°à¦¿à¦šà§à¦›à¦¨à§à¦¨ à¦¡à¦¿à¦œà¦¾à¦‡à¦¨ à¦à¦° à¦®à¦¾à¦§à§à¦¯à¦®à§‡ à¦†à¦ªà¦¨à¦¿ à¦†à¦ªà¦¨à¦¾à¦° à¦¸à¦¾à¦‡à¦Ÿà¦•à§‡ à¦•à¦°à§‡ à¦¤à§à¦²à¦¤à§‡ à¦ªà¦¾à¦°à§‡à¦¨ à¦†à¦°à¦“ à¦ªà§‡à¦¶à¦¾à¦¦à¦¾à¦° à¦“ à¦†à¦•à¦°à§à¦·à¦£à§€à§Ÿà¥¤
 Requires at least: 6.7
 Tested up to: 6.8
 Requires PHP: 7.2
@@ -39,6 +39,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 .nav-link:hover {
   color: #175643 !important;
 }
+
 .dropdown-item:hover {
   background-color: #175643 !important;
   color: white !important;
@@ -47,6 +48,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 .box-shadow-delete:focus {
   box-shadow: none;
 }
+
 /* Navbar css end  */
 
 /* header top CSS Start */
@@ -55,9 +57,11 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   color: white;
   padding: 0 10px 0 10px;
 }
+
 .top-menu ul {
   list-style: none;
 }
+
 .header-top-bg-color {
   background-color: #175643;
 }
@@ -69,6 +73,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   font-size: 13px;
   font-weight: 500;
 }
+
 .main-logo-size img {
   width: 60px;
   height: auto;
@@ -80,24 +85,30 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 .footer-bg-color {
   background-color: #121921;
 }
+
 .footer-address a {
   color: gray;
 }
+
 .footer-address a:hover {
   color: #175643;
   transition: all 0.3s ease;
 }
+
 .footer-headings-color {
   color: white;
 }
+
 .footer-company ul {
   list-style: none;
   padding-left: 0;
 }
+
 .footer-company ul li a {
   text-decoration: none;
   color: gray;
 }
+
 .footer-company ul li a:hover {
   color: #175643;
   transition: all 0.3s ease;
@@ -107,26 +118,32 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   list-style: none;
   padding-left: 0;
 }
+
 .footer-courses ul li a {
   text-decoration: none;
   color: gray;
 }
+
 .footer-courses ul li a:hover {
   color: #175643;
   transition: all 0.3s ease-in-out;
 }
+
 .footer-getin-touch ul {
   list-style: none;
   padding-left: 0;
 }
+
 .footer-getin-touch ul li a {
   text-decoration: none;
   color: gray;
   transition: all 0.3s ease-in-out;
 }
+
 .footer-getin-touch ul li a:hover {
   color: #175643;
 }
+
 /* Footer CSS End  */
 
 /* Welcome section CSS Start  */
@@ -150,6 +167,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   color: #175643;
   transition: all 0.3s ease-in-out;
 }
+
 .next-btn-hover button:hover {
   border-color: #175643;
   color: #175643;
@@ -165,6 +183,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   background-attachment: fixed;
   background-size: cover;
 }
+
 .wh-bg-color {
   background-color: rgba(0, 0, 0, 0.5);
   height: 400px;
@@ -178,6 +197,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   border: 2px solid #175643 !important;
   transition: all 0.3s ease !important;
 }
+
 .why-join-hover a:hover {
   border: 2px solid #175643 !important;
   color: white !important;
@@ -194,6 +214,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   /* background-position: center; */
   min-height: 700px;
 }
+
 .ch-bg-color {
   background-color: rgba(0, 0, 0, 0.5);
   min-height: 700px;
@@ -206,6 +227,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 .customCssForSwiperSlide {
   width: 45.5% !important;
 }
+
 /* what people say section css end */
 
 /* single page css start  */
@@ -215,6 +237,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   background-color: #175643 !important;
   transition: all 0.3 ease-out !important;
 }
+
 .sticky-overview {
   position: sticky;
   top: 110px;
@@ -231,6 +254,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 .for-text-justify {
   text-align: justify;
 }
+
 /* about-us page css end  */
 
 /* Video gallery section css start  */
@@ -241,6 +265,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   background-attachment: fixed;
   background-size: cover;
 }
+
 .vig-bg-color {
   background-color: rgba(0, 0, 0, 0.5);
   height: 300px;
@@ -268,6 +293,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   align-items: center;
   transition: all 0.3s ease;
 }
+
 .social-logo ul li a:hover {
   background-color: #175643;
   border: 1px solid #175643;
@@ -278,6 +304,7 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
 .social-logo-float ul li {
   list-style: none;
 }
+
 .social-logo-float ul li a {
   width: 45px;
   height: 45px;
@@ -288,10 +315,19 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   box-shadow: 2px 2px 2px white;
   transition: all 0.3s ease;
 }
+
 .social-logo-float ul li a:hover {
   color: black !important;
 }
 
 #menu-primary-menu li a {
   font-size: 21px;
+}
+
+
+.media-play {
+  /* margin-left: 6%;
+    top: 6% !important; */
+  width: 30px;
+  height: 30px;
 }

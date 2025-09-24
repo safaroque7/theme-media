@@ -65,7 +65,7 @@ get_template_part('includes/breadcrumbs');
             <!--*** Quick links and enquiry form section start  ***-->
             <div class="col-md-4 mt-md-0 mt-3">
 
-                <h6> আরও পর্ব </h6>
+                <h6 class="bg-light px-3 py-2"> আরও পর্ব </h6>
 
                 <?php
                 $thumb_id = get_post_thumbnail_id(get_the_ID());
