@@ -9,7 +9,7 @@ get_template_part('includes/breadcrumbs');
     <div class="container">
         <div class="row my-5">
 
-            <div class="col-md-8">
+            <div class="col-md-9">
 
                 <!--  1st part start  -->
                 <div class="first-part">
@@ -27,6 +27,7 @@ get_template_part('includes/breadcrumbs');
                                 <iframe class="w-100"
                                     src="<?php echo 'https://www.youtube.com/embed/' . $yotubeVideoLink ?>?rel=0&autoplay=1&autohide=1&showinfo=0"
                                     allow="autoplay; encrypted-media" frameborder="0"></iframe>
+
                             </div>
                             <!--//end per_category_image-->
                         <?php } elseif (!empty($fbVideoLink)) { ?>
@@ -35,7 +36,7 @@ get_template_part('includes/breadcrumbs');
                             <div id="fb-root"></div>
                             <script async defer crossorigin="anonymous"
                                 src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="FbVideo"></script>
-                            <div class="fb-video" data-href="<?php echo $fbVideoLink; ?>" data-show-text="true" data-width="">
+                            <div class="fb-video" data-href="<?php echo $fbVideoLink; ?>" data-show-text="false" data-width="">
                             </div>
                             <!-- It is must to be here end -->
 
@@ -63,7 +64,7 @@ get_template_part('includes/breadcrumbs');
             </div>
 
             <!--*** Quick links and enquiry form section start  ***-->
-            <div class="col-md-4 mt-md-0 mt-3">
+            <div class="col-md-3 mt-md-0 mt-3">
 
                 <h6 class="bg-light px-3 py-2"> আরও পর্ব </h6>
 
@@ -82,25 +83,72 @@ get_template_part('includes/breadcrumbs');
 
                 $posts = get_posts($args);
 
-                foreach ($posts as $post) {
-                    if (has_post_thumbnail()) {
-                        the_post_thumbnail('large', array('class' => 'img-fluid mb-md-3 mb-2'));
-                    }
-                ?>
-
-                    <h5 class="mb-md-4 mb-2"> <a href="<?php the_permalink(); ?>" class="text-decoration-none text-dark"> <span class="text-danger"> <?php echo 'পর্ব : ' . get_field('episode') . ' /'; ?> </span> <?php the_title(); ?> </a> </h5>
-
-                    <!-- <small class="text-secondary"><?php //echo convert_to_bangla(get_the_time('g:i a, j F Y')); 
-                                                        ?></small> -->
-
+                foreach ($posts as $post) { ?>
+                    <div class="border mb-md-5 mb-3">
+                        <div class="card">
+                            <?php
+                            get_template_part('queries/talkshow-query'); ?>
+                        </div>
+                    </div>
                 <?php }
                 wp_reset_postdata(); ?>
 
             </div>
             <!--*** Quick links and enquiry form section end  ***-->
+
         </div>
     </div>
 </div>
 <!-- best-spoken-classes end  -->
+
+
+<div class="container mb-md-5 mb-3 d-print-none">
+    <div class="row">
+        <div class="col-12">
+            <h6 class="fw-bold">আরও <?php bloginfo('name'); ?> পর্ব </h6>
+            <div>
+                <hr class="hr-rule-color">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <?php
+        $thumb_id = get_post_thumbnail_id(get_the_ID());
+        $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+        // বর্তমান পোস্টের ক্যাটাগরি গুলো নিই
+        $categories = get_the_category();
+
+        if ($categories) {
+            $category_ids = array();
+
+            foreach ($categories as $category) {
+                $category_ids[] = $category->term_id;
+            }
+
+            // রিলেটেড পোস্টের Query
+            $related_query = new WP_Query(array(
+                'category__in'   => $category_ids,   // একই ক্যাটাগরি
+                'post__not_in'   => array(get_the_ID()), // বর্তমান পোস্ট বাদ
+                'posts_per_page' => 4,               // কয়টি রিলেটেড পোস্ট চাই
+                'orderby'        => 'date',
+                'order'          => 'DESC'
+            ));
+
+            if ($related_query->have_posts()) {
+                while ($related_query->have_posts()) {
+                    $related_query->the_post(); ?>
+                    <div class="col-md-3 d-flex align-items-stretch">
+                        <div class="card">
+                            <?php get_template_part('queries/talkshow-query'); ?>
+                        </div>
+                    </div>
+        <?php }
+                wp_reset_postdata();
+            }
+        }
+        ?>
+    </div>
+</div>
 
 <?php get_footer();

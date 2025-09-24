@@ -324,10 +324,17 @@ Tags: responsive, custom-logo, featured-images, full-width-template, theme-optio
   font-size: 21px;
 }
 
-
 .media-play {
   /* margin-left: 6%;
     top: 6% !important; */
   width: 30px;
   height: 30px;
+}
+
+.media-theme-img-hover > a > img {
+  transition: all 0.5s ease-in-out;
+}
+
+.media-theme-img-hover > a > img:hover {
+  transform: scale(1.5) !important;
 }

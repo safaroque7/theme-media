@@ -35,8 +35,8 @@
                                 'order'             =>  'DESC'
                             ));
                             while ($episode->have_posts()): $episode->the_post(); ?>
-                                <div class="col-md-3 swiper-slide">
-                                    <div class="card shadow">
+                                <div class="col-md-3 swiper-slide d-flex align-items-stretch">
+                                    <div class="card">
                                         <?php get_template_part('queries/talkshow-query'); ?>
                                     </div>
                                 </div>
