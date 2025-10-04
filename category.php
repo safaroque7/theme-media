@@ -19,6 +19,7 @@ get_template_part('parts/breadcrumbs');
             </div>
             <!-- item end  -->
         <?php endwhile;
+        get_template_part('parts/pagination');
         wp_reset_postdata(); ?>
         <!--*** swiper slider end *** -->
     </div>
