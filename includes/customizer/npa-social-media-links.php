@@ -31,12 +31,13 @@ $wp_customize->add_setting($npa_social_media_2, array(
   'transport' => 'refresh'
 ));
 $wp_customize->add_control($npa_social_media_2, array(
-  'label'         => __('Twitter', 'media'),
-  'description'   => __('Paste Twitter link here'),
+  'label'         => __('Youtube', 'media'),
+  'description'   => __('Paste Youtube link here'),
   'settings'      => $npa_social_media_2,
   'section'       => 'npa_social_media',
-  'type'          => 'url'
+  'type'          => 'text'
 ));
+
 
 // Social Media Link 3
 $npa_social_media_3 = 'npa_social_media_3';
@@ -46,9 +47,9 @@ $wp_customize->add_setting($npa_social_media_3, array(
   'transport' => 'refresh'
 ));
 $wp_customize->add_control($npa_social_media_3, array(
-  'label'         => __('Youtube', 'media'),
-  'description'   => __('Paste Youtube link here'),
+  'label'         => __('Twitter', 'media'),
+  'description'   => __('Paste Twitter link here'),
   'settings'      => $npa_social_media_3,
   'section'       => 'npa_social_media',
-  'type'          => 'text'
+  'type'          => 'url'
 ));

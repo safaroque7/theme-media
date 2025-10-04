@@ -52,10 +52,10 @@
                 <div class="col-md-6 top-menu">
                     <ul class="mb-0 d-flex justify-content-end">
                         <li>
-                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="<?php echo get_theme_mod('npa_social_media_1', '#'); ?>" target="_blank"><i class="bi bi-facebook"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="bi bi-youtube"></i></a>
+                            <a href="<?php echo get_theme_mod('npa_social_media_2', '#'); ?>" target="_blank"><i class="bi bi-youtube"></i></a>
                         </li>
                     </ul>
                 </div>
