@@ -12,24 +12,8 @@
     <div id="fb-root"></div>
     <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 
-
-    <div class="social-logo-float position-absolute bottom-0 end-0">
-        <ul class="ps-0">
-            <li class="mb-2 me-3">
-                <a href="#" class="text-decoration-none text-white bg-color fs-5"><i class="bi bi-telephone"></i> </a>
-            </li>
-
-            <li class="me-3">
-                <a href="#" class="text-decoration-none text-white bg-success fs-5"><i class="bi bi-whatsapp"></i> </a>
-            </li>
-
-
-        </ul>
-    </div>
-    <!-- *****Header Section Start***** -->
-
     <!-- header Top part start  -->
-    <div class="container-fluid header-top-bg-color py-3">
+    <div class="container-fluid header-top-bg-color py-3 d-none d-md-block">
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center py-2">
                 <div class="col-md-6 d-md-flex">
