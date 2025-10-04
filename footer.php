@@ -2,18 +2,14 @@
 <div class="container-fluid footer-bg-color">
     <div class="container">
         <div class="row py-5">
-            <div class="col-md-4">
+
+            <!-- পুটার মেইন লোগো -->
+            <div class="col-md-4 mb-md-0 mb-3">
                 <div class="row">
-                    <div class="col-md-3 haniness-logo mb-3">
-                        <a href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo get_template_directory_uri() . '/images/main-logo.png' ?>" alt="haniness logo" class="img-fluid"></a>
+                    <div class="col-md-3 col-3 haniness-logo">
+                        <a href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/main-logo.png' ?>" alt="Main Logo" class="img-fluid mb-md-3 mb-2"></a>
                     </div>
-                    <div class="col-12 d-flex">
-                        <a href="#"><img class="img-fluid pe-3" style="width: 150px; height: auto;"
-                                src="<?php echo get_template_directory_uri() . '/images/google-play-logo.png' ?>" alt=""></a>
-                        <a href="#"><img class="img-fluid" style="width: 150px; height: auto;"
-                                src="<?php echo get_template_directory_uri() . '/images/App_Store.svg.png' ?>" alt=""></a>
-                    </div>
-                    <div class="col-12 footer-address mt-3">
+                    <div class="col-12 footer-address mb-md-0 mb-3">
                         <a href="#" class="text-decoration-none">
                             <i class="bi bi-geo-alt"></i>
                             260/6, Malibag Biggan College Bhavan, Lift-4, Dhaka-1200
@@ -27,61 +23,53 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 footer-company mt-md-0 mt-3">
-                <h5 class="footer-headings-color mb-3">Company</h5>
+
+            <!-- ক্যাটাগরি -->
+            <div class="col-md-2 footer-company mb-md-0 mb-3">
+                <h5 class="footer-headings-color mb-md-3 mb-2">ক্যাটাগরি</h5>
                 <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li><a href="about-us.html">About</a></li>
-
-                    <li><a href="faqs.html">FAQs</a></li>
-
-                    <li><a href="contact-us.html">Contact</a></li>
-
-                    <li><a href="#">Terms & Condition</a></li>
-
-                    <li><a href="#">Privacy & Policy</a></li>
-
-
-
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'bottom-category-menu',
+                        'menu_class'     => '',
+                        'container'      => false,
+                        'fallback_cb'    => 'bottom_category_menu_fallback',
+                    ));
+                    ?>
                 </ul>
             </div>
-            <div class="col-md-3 footer-courses">
-                <h5 class="footer-headings-color mb-3">Courses</h5>
+
+            <!-- লিগ্যাল মেনু -->
+            <div class="col-md-3 footer-courses mb-md-0 mb-3">
+                <h5 class="footer-headings-color mb-md-3 mb-2"> লিগ্যাল মেনু </h5>
                 <ul>
-                    <li>
-                        <a href="single-page.html">English Speaking</a>
-                    </li>
-                    <li><a href="single-page.html">Public Speaking</a></li>
-
-                    <li><a href="single-page.html">Interview Session</a></li>
-
-                    <li><a href="single-page.html">Personality Development</a></li>
-
-                    <li><a href="single-page.html">Study Abroad</a></li>
-
-                    <li><a href="single-page.html">Foreign Languages</a></li>
-
-
-
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'legal-menu',
+                        'menu_class'     => '',
+                        'container'      => false,
+                        'fallback_cb'    => 'legal_menu_fallback',
+                    ));
+                    ?>
                 </ul>
             </div>
-            <div class="col-md-3 footer-getin-touch">
-                <h5 class="footer-headings-color mb-3">Get In Touch</h5>
+
+            <!-- যোগাযোগ -->
+            <div class="col-md-3 footer-getin-touch mb-md-0 mb-3">
+                <h5 class="footer-headings-color mb-md-3 mb-2"> যোগাযোগ </h5>
                 <ul>
-                    <li>
-                        <a href="#"><i class="bi bi-instagram"></i> Instagram</a>
-                    </li>
-                    <li><a href="#"><i class="bi bi-youtube"></i> Youtube</a></li>
-
-                    <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
-
-                    <li><a href="#"><i class="bi bi-linkedin"></i> Linkedin</a></li>
-
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'get-in-touch-menu',
+                        'menu_class'     => '',
+                        'container'      => false,
+                        'fallback_cb'    => 'contact_menu_fallback',
+                    ));
+                    ?>
                 </ul>
-                <button class="btn bg-danger text-white px-5">Workshop</button>
+                <button class="btn bg-danger text-white px-5"> যোগ দিন আপনিও </button>
             </div>
+
         </div>
     </div>
 </div>

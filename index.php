@@ -9,7 +9,11 @@ get_header();
 //get_template_part('parts/our-guests');
 
 //our-programs
-get_template_part('parts/our-programs-1');
+talkshow_design_function_1(1);
+talkshow_design_function_1(2);
+talkshow_design_function_1(3);
+talkshow_design_function_1(4);
+// get_template_part('parts/our-programs-1');
 get_template_part('parts/our-programs-2');
 
 //get_template_part('parts/our-programs');

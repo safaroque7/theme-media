@@ -1,7 +1,7 @@
 <?php
 get_header();
 //for breadcrumbs
-get_template_part('includes/breadcrumbs');
+get_template_part('parts/breadcrumbs');
 ?>
 
 <!-- best-spoken-classes start  -->
@@ -10,9 +10,8 @@ get_template_part('includes/breadcrumbs');
         <div class="row my-5">
 
             <div class="col-md-9">
-
                 <!--  1st part start  -->
-                <div class="first-part">
+                <div class="first-part sticky-top">
 
                     <div class="d-flex justify-content-center">
                         <?php
@@ -47,7 +46,7 @@ get_template_part('includes/breadcrumbs');
                                     'alt'   => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
                                 ));
                             } else { ?>
-                                <img src="<?php echo get_template_directory_uri() . '/images/custom-thumb-636x358.jpg' ?>"
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/custom-thumb-636x358.jpg' ?>"
                                     alt="<?php echo $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title()); ?>"
                                     class="w-100 mb-2">
                         <?php }
@@ -74,7 +73,7 @@ get_template_part('includes/breadcrumbs');
                 $category = get_the_category(); //get first current category ID
                 $this_post = get_the_ID(); //get ID of current post
                 $args = array(
-                    'numberposts'   =>  10,
+                    'numberposts'   =>  5,
                     'order'         =>  'DESC',
                     'category'      =>  $category[0]->cat_ID,
                     'exclude'       =>  array($this_post)
@@ -87,7 +86,7 @@ get_template_part('includes/breadcrumbs');
                     <div class="border mb-md-5 mb-3">
                         <div class="card">
                             <?php
-                            get_template_part('queries/talkshow-query'); ?>
+                            get_template_part('parts/queries/talkshow-query'); ?>
                         </div>
                     </div>
                 <?php }
@@ -101,11 +100,18 @@ get_template_part('includes/breadcrumbs');
 </div>
 <!-- best-spoken-classes end  -->
 
+<?php
+
+
+/**
+ * 
+ 
+
 
 <div class="container mb-md-5 mb-3 d-print-none">
     <div class="row">
         <div class="col-12">
-            <h6 class="fw-bold">আরও <?php bloginfo('name'); ?> পর্ব </h6>
+            <h6 class="fw-bold"> জনপ্রিয় পর্ব </h6>
             <div>
                 <hr class="hr-rule-color">
             </div>
@@ -113,42 +119,32 @@ get_template_part('includes/breadcrumbs');
     </div>
 
     <div class="row">
+
         <?php
-        $thumb_id = get_post_thumbnail_id(get_the_ID());
-        $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
-        // বর্তমান পোস্টের ক্যাটাগরি গুলো নিই
-        $categories = get_the_category();
-
-        if ($categories) {
-            $category_ids = array();
-
-            foreach ($categories as $category) {
-                $category_ids[] = $category->term_id;
-            }
-
-            // রিলেটেড পোস্টের Query
-            $related_query = new WP_Query(array(
-                'category__in'   => $category_ids,   // একই ক্যাটাগরি
-                'post__not_in'   => array(get_the_ID()), // বর্তমান পোস্ট বাদ
-                'posts_per_page' => 4,               // কয়টি রিলেটেড পোস্ট চাই
-                'orderby'        => 'date',
-                'order'          => 'DESC'
-            ));
-
-            if ($related_query->have_posts()) {
-                while ($related_query->have_posts()) {
-                    $related_query->the_post(); ?>
-                    <div class="col-md-3 d-flex align-items-stretch">
-                        <div class="card">
-                            <?php get_template_part('queries/talkshow-query'); ?>
-                        </div>
-                    </div>
-        <?php }
-                wp_reset_postdata();
-            }
-        }
+        $most_news = new WP_Query(array(
+            'posts_per_page' => 10,
+            'meta_key' => 'post_views_count',
+            'orderby' => 'meta_value_num',
+            'order' => 'DESC',
+        ));
+        while ($most_news->have_posts()) : $most_news->the_post();
         ?>
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card">
+                    <?php get_template_part('parts/queries/talkshow-query'); ?>
+                </div>
+            </div>
+
+        <?php endwhile;
+        wp_reset_postdata(); ?>
+
     </div>
 </div>
+
+ * 
+ * 
+ */
+
+?>
 
 <?php get_footer();

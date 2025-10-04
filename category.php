@@ -1,7 +1,7 @@
 <?php
 get_header();
 //for breadcrumbs
-get_template_part('includes/breadcrumbs');
+get_template_part('parts/breadcrumbs');
 ?>
 
 
@@ -12,9 +12,9 @@ get_template_part('includes/breadcrumbs');
         while (have_posts()): the_post();
         ?>
             <!-- item start  -->
-            <div class="col-md-3">
+            <div class="col-md-3 col-12 mb-md-4 mb-2">
                 <div class="card shadow">
-                    <?php get_template_part('queries/talkshow-query'); ?>
+                    <?php get_template_part('parts/queries/talkshow-query'); ?>
                 </div>
             </div>
             <!-- item end  -->

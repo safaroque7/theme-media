@@ -19,7 +19,7 @@
             <!-- item start  -->
             <div class="col-md-4">
                 <div class="card shadow rounded-0">
-                    <img src="<?php echo get_template_directory_uri() . '/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
                     <div
                         class="card-body our-courses-view-btn-hover d-flex flex-column justify-content-center align-items-center position-relative pb-4">
                         <div
@@ -37,7 +37,7 @@
             <!-- item start  -->
             <div class="col-md-4">
                 <div class="card shadow rounded-0">
-                    <img src="<?php echo get_template_directory_uri() . '/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
                     <div
                         class="card-body our-courses-view-btn-hover d-flex flex-column justify-content-center align-items-center position-relative pb-4">
                         <div
@@ -55,7 +55,7 @@
             <!-- item start  -->
             <div class="col-md-4">
                 <div class="card shadow rounded-0">
-                    <img src="<?php echo get_template_directory_uri() . '/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
                     <div
                         class="card-body our-courses-view-btn-hover d-flex flex-column justify-content-center align-items-center position-relative pb-4">
                         <div
@@ -73,7 +73,7 @@
             <!-- item start  -->
             <div class="col-md-4">
                 <div class="card shadow rounded-0">
-                    <img src="<?php echo get_template_directory_uri() . '/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
                     <div
                         class="card-body our-courses-view-btn-hover d-flex flex-column justify-content-center align-items-center position-relative pb-4">
                         <div
@@ -91,7 +91,7 @@
             <!-- item start  -->
             <div class="col-md-4">
                 <div class="card shadow rounded-0">
-                    <img src="<?php echo get_template_directory_uri() . '/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
                     <div
                         class="card-body our-courses-view-btn-hover d-flex flex-column justify-content-center align-items-center position-relative pb-4">
                         <div
@@ -109,7 +109,7 @@
             <!-- item start  -->
             <div class="col-md-4">
                 <div class="card shadow rounded-0">
-                    <img src="<?php echo get_template_directory_uri() . '/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/our_courses_1.jpg' ?>" class="card-img-top rounded-0" alt="...">
                     <div
                         class="card-body our-courses-view-btn-hover d-flex flex-column justify-content-center align-items-center position-relative pb-4">
                         <div

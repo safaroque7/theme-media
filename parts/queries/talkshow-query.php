@@ -10,7 +10,7 @@
                     'alt'   => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
                 ));
             } else { ?>
-             <img src="<?php echo get_template_directory_uri() . '/images/alter-image-307x185px.jpg'
+             <img src="<?php echo get_template_directory_uri() . '/assets/images/alter-image-307x185px.jpg'
                         ?>" class="card-img-top" alt="...">
          <?php }
             $yotubeVideoLink = get_field('youtube_video_link');

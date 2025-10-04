@@ -4,8 +4,6 @@
 <head>
     <meta charset="<?php bloginfo('charset') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happiness Institute</title>
-
     <?php wp_head(); ?>
 </head>
 
@@ -52,30 +50,15 @@
                     </div>
                 </div>
                 <div class="col-md-6 top-menu">
-                    <ul class="mb-0">
-                        <li class="d-md-flex">
-                            <a href="index.html">Go To Home</a>
-
-                            <div class="vr"></div>
-                            <a href="about-us.html">About Us</a>
-                            <div class="vr"></div>
-                            <a href="#">Blog</a>
-                            <div class="vr"></div>
-                            <a href="contact-us.html">Contact Us</a>
-                            <div class="vr"></div>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <div class="vr"></div>
-                            <a href="#"><i class="bi bi-youtube"></i></a>
-                            <div class="vr"></div>
+                    <ul class="mb-0 d-flex justify-content-end">
+                        <li>
                             <a href="#"><i class="bi bi-facebook"></i></a>
-                            <div class="vr"></div>
-                            <a href="#"><i class="bi bi-google-play"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
                         </li>
                     </ul>
-
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -90,7 +73,7 @@
                     <div class="col-12 d-md-flex px-0 py-0">
                         <div class="speacing-betwn d-flex justify-content-between">
                             <a class="navbar-brand main-logo-size" href="index.html">
-                                <img src="<?php echo get_template_directory_uri() . '/images/main-logo.png' ?>"
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/main-logo.png' ?>"
                                     alt="Happiness_Main_Logo"></a>
                             <button class="navbar-toggler border-0 box-shadow-delete" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -105,7 +88,7 @@
                                 <?php
                                 wp_nav_menu(array(
                                     'theme_location' => 'primary-menu',
-                                    'menu_class'     =>  'navbar-nav',
+                                    'menu_class'     => 'navbar-nav',
                                     'container'      => false,
                                     'depth'          => 0,
                                     'fallback_cb'    => 'primary_menu_fallback',

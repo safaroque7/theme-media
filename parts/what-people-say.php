@@ -37,7 +37,7 @@
 
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis neque repellat
                                         natus et? Harum debitis molestias laboriosam quaerat fuga fugiat.</p>
-                                    <img src="<?php echo get_template_directory_uri() . '/images/review.jpg' ?>" alt="sms"
+                                    <img src="<?php echo get_template_directory_uri() . '/assets/images/review.jpg' ?>" alt="sms"
                                         class="img-fluid position-absolute top-50 start-0 translate-middle rounded-pill border border-4"
                                         style="width: 80px; height: auto;">
                                 </div>
@@ -54,7 +54,7 @@
 
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis neque repellat
                                         natus et? Harum debitis molestias laboriosam quaerat fuga fugiat.</p>
-                                    <img src="<?php echo get_template_directory_uri() . '/images/review.jpg' ?>" alt="sms"
+                                    <img src="<?php echo get_template_directory_uri() . '/assets/images/review.jpg' ?>" alt="sms"
                                         class="img-fluid position-absolute top-50 start-0 translate-middle rounded-pill border border-4"
                                         style="width: 80px; height: auto;">
                                 </div>
@@ -71,7 +71,7 @@
 
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis neque repellat
                                         natus et? Harum debitis molestias laboriosam quaerat fuga fugiat.</p>
-                                    <img src="<?php echo get_template_directory_uri() . '/images/review.jpg' ?>" alt="sms"
+                                    <img src="<?php echo get_template_directory_uri() . '/assets/images/review.jpg' ?>" alt="sms"
                                         class="img-fluid position-absolute top-50 start-0 translate-middle rounded-pill border border-4"
                                         style="width: 80px; height: auto;">
                                 </div>
@@ -88,7 +88,7 @@
 
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis neque repellat
                                         natus et? Harum debitis molestias laboriosam quaerat fuga fugiat.</p>
-                                    <img src="<?php echo get_template_directory_uri() . '/images/review.jpg' ?>" alt="sms"
+                                    <img src="<?php echo get_template_directory_uri() . '/assets/images/review.jpg' ?>" alt="sms"
                                         class="img-fluid position-absolute top-50 start-0 translate-middle rounded-pill border border-4"
                                         style="width: 80px; height: auto;">
                                 </div>
@@ -105,7 +105,7 @@
 
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis neque repellat
                                         natus et? Harum debitis molestias laboriosam quaerat fuga fugiat.</p>
-                                    <img src="<?php echo get_template_directory_uri() . '/images/review.jpg' ?>" alt="sms"
+                                    <img src="<?php echo get_template_directory_uri() . '/assets/images/review.jpg' ?>" alt="sms"
                                         class="img-fluid position-absolute top-50 start-0 translate-middle rounded-pill border border-4"
                                         style="width: 80px; height: auto;">
                                 </div>
