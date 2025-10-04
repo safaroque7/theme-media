@@ -56,7 +56,7 @@
                 <div class="row">
                     <div class="col-12 d-md-flex px-0 py-0">
                         <div class="speacing-betwn d-flex justify-content-between">
-                            <a class="navbar-brand main-logo-size" href="index.html">
+                            <a class="navbar-brand main-logo-size" href="<?php echo esc_url(home_url()); ?>">
                                 <img src="<?php echo get_template_directory_uri() . '/assets/images/main-logo.png' ?>"
                                     alt="Happiness_Main_Logo"></a>
                             <button class="navbar-toggler border-0 box-shadow-delete" type="button"
