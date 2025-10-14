@@ -97,7 +97,13 @@ get_template_part('parts/breadcrumbs');
 <div class="container mb-md-5 mb-3 d-print-none">
     <div class="row">
         <div class="col-12">
-            <h6 class="fw-bold"> আরও পর্ব </h6>
+            <?php
+            $categories = get_the_category();
+            if (!empty($categories)) {
+                echo '<h6 class="fw-bold">' . esc_html($categories[0]->name) . ' ক্যাটাগরির আরও পর্ব</h6>';
+            }
+            ?>
+
             <div>
                 <hr class="hr-rule-color">
             </div>
