@@ -55,7 +55,8 @@ get_template_part('parts/breadcrumbs');
 
                     <div class="mt-4">
                         <h4 class="mb-md-3 mb-2"> পর্ব : <?php echo $episodeNo; ?> </h4>
-                        <h3 class="fw-bold"> <?php the_title(); ?> </h3>
+                        <h3 class="fw-bold mb-md-4 mb-2"> <?php the_title(); ?> </h3>
+                        <div class="text-secondary mb-md-4 mb-2"><?php echo convert_to_bangla(get_the_time('g:i a, j F Y')); ?></div>
                         <?php the_content(); ?>
                     </div>
                 </div>
@@ -65,7 +66,7 @@ get_template_part('parts/breadcrumbs');
             <!--*** Quick links and enquiry form section start  ***-->
             <div class="col-md-3 mt-md-0 mt-3">
 
-                <h6 class="bg-light px-3 py-2"> আরও পর্ব </h6>
+                <h6 class="bg-light px-3 py-2"> সর্বশেষ পর্ব </h6>
 
                 <?php
                 $last_post = new WP_Query(array(

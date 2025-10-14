@@ -40,6 +40,7 @@
             echo $trim_words;
             ?>
      </p>
+     <div class="text-secondary mb-md-4 mb-2"><?php echo convert_to_bangla(get_the_time('g:i a, j F Y')); ?></div>
      <div class="border-top"></div>
      <div class="row py-3 d-flex justify-content-between align-items-center">
          <div class="col-6 call-btn border-end view-btn-hover d-flex justify-content-start">
