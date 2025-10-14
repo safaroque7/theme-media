@@ -114,7 +114,7 @@ get_template_part('parts/breadcrumbs');
         ));
         while ($most_news->have_posts()) : $most_news->the_post();
         ?>
-            <div class="col-md-3 d-flex align-items-stretch">
+            <div class="col-md-3 d-flex align-items-stretch mb-md-4 mb-2">
                 <div class="card">
                     <?php get_template_part('parts/queries/talkshow-query'); ?>
                 </div>
