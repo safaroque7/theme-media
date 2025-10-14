@@ -70,6 +70,8 @@ get_template_part('parts/breadcrumbs');
                 <?php
                 $last_post = new WP_Query(array(
                     'posts_per_page'    =>  10,
+                    'meta_key'          =>  'episode',
+                    'orderby'           =>  'meta_value_num',
                     'order'             =>  'DESC'
                 ));
 
