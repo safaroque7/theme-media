@@ -106,11 +106,18 @@ get_template_part('parts/breadcrumbs');
 
     <div class="row">
         <?php
+        // বর্তমান পোস্টের আইডি নিচ্ছি
         $current_post_id = get_the_ID();
+
+        // বর্তমান পোস্টের ক্যাটাগরিগুলোর ID নিচ্ছি
+        $categories = wp_get_post_categories($current_post_id);
+
+        // কোয়ারি তৈরি করছি
         $most_news = new WP_Query(array(
             'posts_per_page' => 10,
             'order' => 'DESC',
             'post__not_in'   => array($current_post_id), // 🔥 বর্তমান পোস্ট বাদ দেবে
+            'category__in'   => $categories,  // একই ক্যাটাগরির পোস্টগুলো আনবে
         ));
         while ($most_news->have_posts()) : $most_news->the_post();
         ?>
