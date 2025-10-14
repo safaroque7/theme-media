@@ -105,13 +105,12 @@ get_template_part('parts/breadcrumbs');
     </div>
 
     <div class="row">
-
         <?php
+        $current_post_id = get_the_ID();
         $most_news = new WP_Query(array(
             'posts_per_page' => 10,
-            'meta_key' => 'post_views_count',
-            'orderby' => 'meta_value_num',
             'order' => 'DESC',
+            'post__not_in'   => array($current_post_id), // 🔥 বর্তমান পোস্ট বাদ দেবে
         ));
         while ($most_news->have_posts()) : $most_news->the_post();
         ?>
@@ -126,6 +125,4 @@ get_template_part('parts/breadcrumbs');
 
     </div>
 </div>
-
-
 <?php get_footer();
