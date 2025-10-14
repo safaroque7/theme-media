@@ -68,28 +68,20 @@ get_template_part('parts/breadcrumbs');
                 <h6 class="bg-light px-3 py-2"> আরও পর্ব </h6>
 
                 <?php
-                $thumb_id = get_post_thumbnail_id(get_the_ID());
-                $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
-                $category = get_the_category(); //get first current category ID
-                $this_post = get_the_ID(); //get ID of current post
-                $args = array(
-                    'numberposts'   =>  5,
-                    'order'         =>  'DESC',
-                    'category'      =>  $category[0]->cat_ID,
-                    'exclude'       =>  array($this_post)
+                $last_post = new WP_Query(array(
+                    'posts_per_page'    =>  10,
+                    'order'             =>  'DESC'
+                ));
 
-                );
-
-                $posts = get_posts($args);
-
-                foreach ($posts as $post) { ?>
-                    <div class="border mb-md-5 mb-3">
-                        <div class="card">
-                            <?php
-                            get_template_part('parts/queries/talkshow-query'); ?>
+                while ($last_post->have_posts()): $last_post->the_post(); { ?>
+                        <div class="border mb-md-5 mb-3">
+                            <div class="card">
+                                <?php
+                                get_template_part('parts/queries/talkshow-query'); ?>
+                            </div>
                         </div>
-                    </div>
                 <?php }
+                endwhile;
                 wp_reset_postdata(); ?>
 
             </div>
@@ -100,18 +92,10 @@ get_template_part('parts/breadcrumbs');
 </div>
 <!-- best-spoken-classes end  -->
 
-<?php
-
-
-/**
- * 
- 
-
-
 <div class="container mb-md-5 mb-3 d-print-none">
     <div class="row">
         <div class="col-12">
-            <h6 class="fw-bold"> জনপ্রিয় পর্ব </h6>
+            <h6 class="fw-bold"> আরও পর্ব </h6>
             <div>
                 <hr class="hr-rule-color">
             </div>
@@ -141,10 +125,5 @@ get_template_part('parts/breadcrumbs');
     </div>
 </div>
 
- * 
- * 
- */
-
-?>
 
 <?php get_footer();
