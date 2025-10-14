@@ -120,7 +120,7 @@ get_template_part('parts/breadcrumbs');
 
         // কোয়ারি তৈরি করছি
         $most_news = new WP_Query(array(
-            'posts_per_page' => 10,
+            'posts_per_page' => 12,
             'order' => 'DESC',
             'post__not_in'   => array($current_post_id), // 🔥 বর্তমান পোস্ট বাদ দেবে
             'category__in'   => $categories,  // একই ক্যাটাগরির পোস্টগুলো আনবে
